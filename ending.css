@@ -1,0 +1,31 @@
+/* The final title card. No styles reach into the approved chapters. */
+.ending { min-height: 94svh; padding: clamp(130px, 23svh, 280px) 8% 42px; background: #eeeae1; color: #686e60; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.ending-title { font: 400 clamp(100px, 17vw, 260px)/.82 Arial, Helvetica, sans-serif; letter-spacing: -.075em; margin: 0; padding-right: .075em; }
+.ending-place { font: 8px/1.6 Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; margin: 30px 0 0; }
+.ending-line { font: italic 400 clamp(21px, 2vw, 28px)/1.4 Georgia, serif; letter-spacing: -.025em; margin: 67px 0 0; color: #717567; }
+.ending-links { display: flex; align-items: center; justify-content: center; gap: 44px; padding-top: 115px; margin-top: auto; }
+.ending-links a, .ending-links button { font: 9px/1.5 Arial, sans-serif; letter-spacing: 1px; color: #555d4e; text-decoration: none; padding: 14px 0; background: none; border: 0; white-space: nowrap; }
+.ending-links a:hover { text-decoration: underline; text-underline-offset: 6px; }
+.ending-links a span { margin-left: 7px; }
+.ending-links .ending-book { border-bottom: 1px solid #8e9383; letter-spacing: 1.5px; text-transform: uppercase; margin-left: 15px; }
+.ending-book span { margin-left: 24px; font-size: 17px; line-height: 0; }
+/* A single diminishing warmth, without movement or a repeating animation. */
+.ending.has-last-light .ending-title { animation: last-light 6s cubic-bezier(.15,.5,.2,1) both; }
+@keyframes last-light { from { color: #a2947b; } to { color: #686e60; } }
+@media (max-width: 600px) {
+ .ending { min-height: 100svh; padding: clamp(160px, 25svh, 220px) 24px 32px; }
+ .ending-title { font-size: 26vw; }
+ .ending-place { font-size: 7px; letter-spacing: 1.6px; margin-top: 23px; }
+ .ending-line { font-size: 21px; margin-top: 65px; max-width: 270px; }
+ .ending-links { width: 100%; gap: 25px; padding-top: 115px; }
+ .ending-links a, .ending-links button { font-size: 8px; letter-spacing: .5px; }
+ .ending-links .ending-book { margin-left: 0; letter-spacing: .7px; }
+ .ending-book span { margin-left: 10px; font-size: 15px; }
+}
+@media (max-width: 350px) {
+ .ending-links { gap: 17px; }
+ .ending-book span { margin-left: 5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .ending.has-last-light .ending-title { animation: none; }
+}
