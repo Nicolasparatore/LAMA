@@ -1,0 +1,105 @@
+/* Only the intimate story after Nueva 4. All approved upper-page styles stay untouched. */
+.lower-stay { padding: 95px 8% 85px; }
+.lower-stay figure { margin: 0; }
+.lower-stay img { display: block; width: 100%; height: auto; object-fit: cover; }
+.lower-note, .lower-stay figcaption { font: 8px/1.7 Arial, sans-serif; letter-spacing: 1.6px; color: #77796b; }
+.lower-note { display: block; }
+.lower-stay figcaption { margin-top: 17px; font-size: 7px; }
+.lower-stay h3 { font: 400 clamp(32px, 3.8vw, 56px)/1.1 Georgia, serif; letter-spacing: -.035em; margin: 25px 0; }
+.lower-stay em { color: #777869; }
+.lower-stay p { font: 12px/1.9 Arial, sans-serif; color: #686b60; margin: 0; }
+.lower-stay p + p { margin-top: 17px; }
+.lower-heading { margin: 0 0 40px 6%; }
+.lower-room-composition { display: grid; grid-template-columns: 28% 40% 1fr; gap: 5%; align-items: start; }
+.lower-room-side { padding: 15px 0 0; }
+.lower-room-side > p { max-width: 290px; }
+.lower-lamp { width: 70%; margin: 48px 0 0 auto !important; }
+.lower-window { margin-left: 0; }
+.lower-room-composition .lower-margin { align-self: end; padding-bottom: 70px; font: 400 clamp(18px, 1.7vw, 25px)/1.35 Georgia, serif; letter-spacing: -.02em; }
+.lower-return { display: grid; grid-template-columns: 34% 32% 26%; gap: 4%; align-items: center; margin-top: 140px; }
+.lower-return h3 { font-size: clamp(30px, 3.1vw, 46px); }
+.lower-return-light { align-self: end; margin-bottom: 45px !important; }
+.lower-table { margin-top: 140px; }
+.lower-section-line { display: flex; justify-content: space-between; border-top: 1px solid #bdbeb0; padding-top: 23px; margin-bottom: 55px; }
+.lower-table-composition { display: grid; grid-template-columns: 38% 36% 1fr; gap: 5%; align-items: center; }
+.lower-table-copy { padding-right: 28px; }
+.lower-table-copy h3 { margin-top: 0; }
+.lower-table-composition .lower-table-aside { align-self: end; padding-bottom: 50px; font: italic 22px/1.4 Georgia, serif; }
+.lower-morning { position: relative; display: grid; grid-template-columns: 39% 1fr 18%; gap: 5%; align-items: center; margin: 130px 0 0 6%; }
+.lower-morning h3 { font-size: clamp(30px, 3.2vw, 46px); }
+.lower-roof { align-self: end; margin-bottom: -55px !important; }
+.lower-outside { margin-top: 170px; }
+.lower-outside-heading { margin: 0 0 45px 24%; }
+.lower-outside-composition { display: grid; grid-template-columns: 29% 43%; gap: 17%; align-items: center; margin-left: 5%; }
+.lower-path-side { padding-top: 70px; }
+.lower-path-side > p { margin-top: 35px; max-width: 300px; }
+.lower-booking { display: grid; grid-template-columns: 53% 1fr; gap: 8%; align-items: center; margin-top: 140px; }
+.lower-booking h3 { font-size: clamp(30px, 3.3vw, 49px); }
+.lower-booking-copy > p { max-width: 350px; }
+.lower-book { width: fit-content; min-height: 44px; margin-top: 30px; }
+@media (max-width: 1000px) and (min-width: 601px) {
+ .lower-stay { padding: 75px 6% 70px; }
+ .lower-stay h3 { font-size: 36px; }
+ .lower-room-composition { grid-template-columns: 35% 49%; column-gap: 8%; row-gap: 24px; }
+ .lower-room-composition .lower-margin { grid-column: 1 / 3; padding: 0 0 0 43%; font-size: 21px; margin-top: 24px; }
+ .lower-return { grid-template-columns: 32% 39% 21%; gap: 4%; margin-top: 100px; }
+ .lower-return h3 { font-size: 30px; }
+ .lower-return-light { width: 100%; grid-column: auto; margin: 0 0 25px !important; }
+ .lower-table { margin-top: 90px; }
+ .lower-table-composition { grid-template-columns: 48% 44%; gap: 8%; }
+ .lower-table-copy { padding: 0; }
+ .lower-table-composition .lower-table-aside { grid-column: 2; padding: 0; margin-top: 25px; }
+ .lower-morning { grid-template-columns: 43% 1fr; gap: 8%; margin: 90px 0 0; }
+ .lower-roof { display: none; }
+ .lower-outside { margin-top: 100px; }
+ .lower-outside-heading { margin-left: 8%; }
+ .lower-outside-composition { grid-template-columns: 34% 51%; gap: 15%; margin-left: 0; }
+ .lower-path-side { padding-top: 0; }
+ .lower-booking { grid-template-columns: 49% 1fr; gap: 6%; margin-top: 100px; }
+ .lower-booking h3 { font-size: 31px; }
+}
+@media (max-width: 600px) {
+ .lower-stay { padding: 65px 24px 55px; }
+ .lower-stay h3 { font-size: 35px; margin: 22px 0; }
+ .lower-note { font-size: 7px; }
+ .lower-stay figcaption { font-size: 6px; letter-spacing: 1px; margin-top: 13px; }
+ .lower-heading { margin: 0 0 28px; }
+ .lower-room-composition { display: grid; grid-template-columns: 31% 1fr; gap: 13px; }
+ .lower-room-side { display: contents; }
+ .lower-room-side > p { grid-column: 1 / 3; max-width: 100%; margin-bottom: 18px; }
+ .lower-lamp { grid-column: 1; grid-row: 2; width: 100%; margin: 35px 0 0 !important; }
+ .lower-lamp figcaption { display: none; }
+ .lower-window { grid-column: 2; grid-row: 2; }
+ .lower-room-composition .lower-margin { grid-column: 1 / 3; padding: 20px 0 0 12%; font-size: 22px; }
+ .lower-return { grid-template-columns: 56% 1fr; gap: 14px; align-items: start; margin-top: 80px; }
+ .lower-cabin { grid-column: 1; grid-row: 1; }
+ .lower-return-light { grid-column: 2; grid-row: 1; width: 100%; margin: 60px 0 0 !important; }
+ .lower-return-copy { grid-column: 1 / 3; grid-row: 2; margin: 23px 0 0 7%; }
+ .lower-return-copy h3 { font-size: 34px; }
+ .lower-table { margin-top: 80px; }
+ .lower-section-line { padding-top: 18px; margin-bottom: 35px; }
+ .lower-table-composition { display: grid; grid-template-columns: 28% 1fr; gap: 18px; }
+ .lower-table-copy { grid-column: 1 / 3; padding: 0; }
+ .lower-table-copy h3 { margin-top: 0; }
+ .lower-evening { grid-column: 2; grid-row: 2; margin-top: 14px !important; }
+ .lower-table-composition .lower-table-aside { grid-column: 1; grid-row: 2; align-self: center; padding: 0; font-size: 18px; }
+ .lower-morning { display: grid; grid-template-columns: 1fr 26%; gap: 14px; margin: 75px 0 0; }
+ .lower-breakfast { grid-column: 1; grid-row: 1; }
+ .lower-roof { grid-column: 2; grid-row: 1; align-self: end; margin: 0 0 -30px !important; }
+ .lower-roof figcaption { display: none; }
+ .lower-morning-copy { grid-column: 1 / 3; margin: 26px 0 0 7%; }
+ .lower-morning-copy h3 { font-size: 34px; }
+ .lower-outside { margin-top: 80px; }
+ .lower-outside-heading { margin: 0 0 30px; }
+ .lower-outside-heading h3 { font-size: 33px; }
+ .lower-outside-composition { display: grid; grid-template-columns: 36% 1fr; gap: 14px; align-items: start; margin-left: 0; }
+ .lower-path-side { display: contents; }
+ .lower-path { grid-column: 1; grid-row: 1; margin-top: 40px !important; }
+ .lower-mountain { grid-column: 2; grid-row: 1; }
+ .lower-path figcaption { display: none; }
+ .lower-path-side > p { grid-column: 1 / 3; grid-row: 2; max-width: 100%; margin-top: 15px; }
+ .lower-booking { display: flex; flex-direction: column; align-items: stretch; gap: 32px; margin-top: 75px; }
+ .lower-booking-copy { margin-left: 7%; }
+ .lower-booking h3 { font-size: 34px; }
+ .lower-book { margin-top: 25px; }
+}

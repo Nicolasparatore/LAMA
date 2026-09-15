@@ -1,0 +1,93 @@
+/* A paper threshold between the two halves of a day. Scoped to the guest story. */
+.guest-story { --guest-seam: 14px; padding: 65px 8% 70px; }
+.guest-story figure { margin: 0; }
+.guest-story img, .journey-payoff img { display: block; width: 100%; height: auto; object-fit: cover; }
+.guest-story em { color: #777869; }
+.guest-note, .guest-story figcaption { font: 8px/1.7 Arial, sans-serif; letter-spacing: 1.5px; color: #77796b; }
+.guest-note { display: block; }
+.guest-story figcaption { margin-top: 13px; font-size: 7px; }
+.guest-masthead { display: flex; justify-content: space-between; border-top: 1px solid #bdbeb0; padding-top: 20px; }
+.guest-story h2 { position: relative; z-index: 1; width: fit-content; font: 400 clamp(43px, 5.2vw, 78px)/1.04 Georgia, serif; letter-spacing: -.045em; margin: 28px 0 32px; }
+.guest-story h3 { font: 400 clamp(29px, 3.1vw, 46px)/1.1 Georgia, serif; letter-spacing: -.035em; margin: 0 0 21px; }
+.guest-story p { font: 12px/1.85 Arial, sans-serif; color: #686b60; margin: 0; }
+.guest-threshold { display: grid; grid-template-columns: 7.4fr 4.6fr; grid-template-rows: auto 1fr; gap: 0 var(--guest-seam); align-items: start; }
+.guest-intro { grid-column: 1; grid-row: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 3px 35px 32px 0; }
+.guest-intro .guest-deck { font: 400 clamp(22px, 2vw, 30px)/1.2 Georgia, serif; letter-spacing: -.025em; color: #292b25; }
+.guest-room { grid-column: 2; grid-row: 1 / 3; }
+.guest-trail { grid-column: 1; grid-row: 2; align-self: end; }
+.guest-frame { position: relative; overflow: hidden; }
+.guest-trail .guest-frame { aspect-ratio: 4592 / 3056; }
+.guest-room .guest-frame { aspect-ratio: 2 / 3; }
+.guest-breakfast .guest-frame { aspect-ratio: 1200 / 1325; }
+.guest-frame img { width: 100%; height: 100%; position: absolute; inset: 0; }
+.guest-story.has-guest-motion .guest-frame img { top: -14px; height: calc(100% + 28px); }
+.guest-story .guest-frame.is-in-view img { will-change: transform; }
+.guest-trail figcaption, .guest-room figcaption { display: flex; justify-content: space-between; gap: 12px; }
+.guest-room figcaption { padding-left: 0; }
+.guest-return { display: grid; grid-template-columns: 28% 1fr; gap: 9%; align-items: center; margin: 38px 9% 0 6%; }
+.guest-return-copy { padding: 10px 0 10px 25px; border-left: 1px solid #bdbeb0; }
+.guest-return-copy p { max-width: 450px; }
+.guest-house img { aspect-ratio: 6629 / 4419; }
+.guest-morning { display: grid; grid-template-columns: 48% 1fr; gap: 9%; align-items: center; margin: 65px 0 0; }
+.guest-table-pair { display: grid; grid-template-columns: 1fr 65%; gap: var(--guest-seam); align-items: end; }
+.guest-evening { padding-bottom: 45px; }
+.guest-evening img { aspect-ratio: 3 / 4; }
+.guest-morning-copy .guest-note { margin-bottom: 23px; }
+.guest-morning-copy > p { max-width: 385px; }
+.guest-invitation { margin-top: 28px; }
+.guest-invitation > p { font: italic 18px/1.5 Georgia, serif; color: #777869; margin-bottom: 12px; }
+.guest-book { width: fit-content; min-height: 44px; }
+/* The approved photographic payoff retains its size and framing. */
+.journey-payoff { margin: 0; }
+.journey-payoff img { min-height: 100svh; }
+@media (max-width: 1000px) and (min-width: 601px) {
+ .guest-story { padding: 55px 6% 60px; }
+ .guest-intro { display: block; padding: 0 28px 24px 0; }
+ .guest-intro .guest-deck { margin-bottom: 16px; }
+ .guest-intro > p:last-child { max-width: 295px; font-size: 11px; }
+ .guest-return { margin: 32px 0 0; grid-template-columns: 28% 1fr; gap: 6%; }
+ .guest-return-copy { padding-left: 20px; }
+ .guest-morning { gap: 6%; margin-top: 48px; }
+ .guest-story h3 { font-size: 30px; }
+ .guest-morning-copy .guest-note { margin-bottom: 18px; }
+ .guest-invitation > p { font-size: 17px; }
+}
+@media (max-width: 600px) {
+ .guest-story { --guest-seam: 9px; padding: 45px 24px 55px; }
+ .guest-masthead { padding-top: 16px; }
+ .guest-masthead > span:last-child { font-size: 6px; letter-spacing: .7px; }
+ .guest-note { font-size: 7px; }
+ .guest-story h2 { font-size: clamp(36px, 10vw, 54px); margin: 25px 0 28px; }
+ .guest-story h3 { font-size: 31px; margin-bottom: 19px; }
+ .guest-story p { font-size: 12px; }
+ .guest-threshold { grid-template-columns: 44% 1fr; grid-template-rows: auto auto; margin: 0 -12px; align-items: start; }
+ .guest-intro { grid-column: 1 / 3; display: block; padding: 0 12px 30px; }
+ .guest-intro .guest-deck { font-size: 25px; margin-bottom: 17px; }
+ .guest-intro .guest-deck br { display: none; }
+ .guest-intro > p:last-child { max-width: 310px; }
+ .guest-trail { grid-column: 1; grid-row: 2; align-self: start; margin-top: 45px !important; }
+ .guest-room { grid-column: 2; grid-row: 2; }
+ .guest-trail figcaption, .guest-room figcaption { font-size: 6px; letter-spacing: .8px; margin-top: 11px; }
+ .guest-trail figcaption > span:last-child, .guest-room figcaption > span:last-child { display: none; }
+ .guest-return { position: relative; display: grid; grid-template-columns: 31% 1fr; gap: 15px; align-items: start; margin: 30px 0 0; }
+ .guest-house { margin-top: 6px !important; }
+ .guest-house figcaption { display: none; }
+ .guest-return-copy { display: contents; }
+ .guest-return-copy h3 { grid-column: 2; grid-row: 1; }
+ .guest-return h3 { font-size: 28px; margin-bottom: 20px; }
+ .guest-return h3 br { display: none; }
+ .guest-return h3 em { display: block; }
+ .guest-return-copy > p { grid-column: 1 / 3; grid-row: 2; padding-top: 5px; }
+ .guest-morning { display: flex; flex-direction: column; align-items: stretch; gap: 30px; margin-top: 50px; }
+ .guest-table-pair { width: 91%; grid-template-columns: 1fr 65%; }
+ .guest-evening { padding-bottom: 28px; }
+ .guest-table-pair figcaption { font-size: 6px; letter-spacing: .8px; }
+ .guest-morning-copy { margin-left: 7%; }
+ .guest-morning-copy .guest-note { margin-bottom: 20px; }
+ .guest-morning-copy h3 { font-size: 32px; }
+ .guest-invitation { margin-top: 25px; }
+ .guest-invitation > p { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .guest-story.has-guest-motion .guest-frame img { top: 0; height: 100%; transform: none !important; }
+}
