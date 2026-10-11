@@ -29,3 +29,7 @@
 @media (prefers-reduced-motion: reduce) {
  .ending.has-last-light .ending-title { animation: none; }
 }
+.ending-sign { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; font: italic 400 13px/1 Georgia, serif; letter-spacing: .01em; color: #7d8274; text-decoration: none; white-space: nowrap; transition: color .3s; }
+.ending-sign img { width: 48px; height: 24px; object-fit: contain; filter: drop-shadow(0 1px 2px rgba(60, 66, 54, .35)); transition: translate .6s cubic-bezier(.2, .8, .2, 1); }
+.ending-sign:hover { color: #555d4e; }
+.ending-sign:hover img { translate: 3px 0; }
